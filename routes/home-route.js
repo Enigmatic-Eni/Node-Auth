@@ -7,7 +7,7 @@ router.get("/index", authMiddleware, (req, res)=>{
     const {username, userId, role} = req.userInfo;
 
     res.json({
-        message: "Welcome to the home page",
+        message: "Welcome to the Home page",
         user:{
             _id: userId,
             username,

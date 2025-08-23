@@ -5,7 +5,12 @@ const adminMiddleware = require('../middleware/admin-middleware')
 
 router.get('/index', authMiddleware, adminMiddleware, (req, res) =>{ 
   res.json({
-        message : "Welcome to the admin route"
+        message : "Welcome to the admin route",
+        user:{
+            _id: userId,
+            username,
+            role
+        }
     });
 });
 
