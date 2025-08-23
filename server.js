@@ -17,9 +17,7 @@ const PORT = process.env.PORT || 3000;
 // middleware
 app.use(express.json())
 
- app.get('/text-cors', (req, res) => {
-  res.json({ message: 'CORS is working!' });
-});
+
 
 app.use('/auth', authRoutes);
 app.use('/home', homeRoute);
